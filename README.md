@@ -36,19 +36,19 @@
   3. IDLE is the official standard development environment for python，it will be installed when we install the python
   
 ## Python Syntax Structure
-  1. Indentation
+  1. Indentation  
     The different lines code that have the same indentation(like 4 space) is the same code block; this likes the java use the {} express a code block. More rules of the python we can scan the "[PEP-8](https://www.python.org/dev/peps/pep-0008/)" to know.
   2. Comment  
     1). One line comment: use the #  
     2). Multi-line comments: use the """xxx"""  
-  3. How to name the Variable
-    1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "
-    2). the capital alphabet is different with the lower case alphabet
-  4. Line connector
-    If the character is too many in one line code when we writing the code, we can use the line connector '\' to write the character in many lins
+  3. How to name the Variable  
+    1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "  
+    2). the capital alphabet is different with the lower case alphabet  
+  4. Line connector  
+    If the character is too many in one line code when we writing the code, we can use the line connector '\' to write the character in many lins  
 
-## Object
-  1. one Object is composed by identity、type、value
-  identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity
-  type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye
-  value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object
+## Object  
+  1. one Object is composed by identity、type、value  
+  identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity  
+  type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
+  value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
