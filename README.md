@@ -30,3 +30,8 @@
       If the implementation is hard to explain, it's a bad idea.  
       If the implementation is easy to explain, it may be a good idea.  
       Namespaces are one honking great idea -- let's do more of those!  
+## The Development environment of python
+  1. IDLE、Pycharm、wingIDE、IPython、Eclipse and others is the most commonly used Development environment when the programmers write code
+  2. There is many ways in the website to tell us how to install the python or pycharm and others tools thar you want to use, so you can deal it by youself though the website(there is a question that we should notice when we install the software, we shoule use the english or pinyin as the installation path)
+  3. IDLE is the official standard development environment for python，it will be installed when we install the python
+  
