@@ -37,6 +37,6 @@
   
 ## Python Syntax Structure
   1. indentation
-  2. Comment
-    1). One line comment: use the # 
-    2). Multi-line comments:
+  2. Comment  
+    1). One line comment: use the #  
+    2). Multi-line comments:  
