@@ -44,6 +44,10 @@
   3. How to name the Variable  
     1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "  
     2). the capital alphabet is different with the lower case alphabet  
+    3). we can not use the keywords(like if、and、else...) to name the variable
+    4). begin and end with double underline has a special meaning, we should avoid when name a variable, like the '__init__' means a class
+    5). when we use the variable, we must initialize it
+    6). use the 'del variable' to delete a variable
   4. Line connector  
     If the character is too many in one line code when we writing the code, we can use the line connector '\' to write the character in many lins  
 
@@ -52,3 +56,16 @@
   identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity  
   type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
   value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
+  
+  2. Quote
+  3. Identifier
+    1). module and bag name: all lower case, like: math  
+    2). function name: all lower case, different words use the '_' to connect, like: my_name  
+    3). class name: the first alphabet is capital of every words, (Hump principle） like: MyPhone  
+    4). constant： all capital, like: MAX_SPEED  
+    
+  4. Type of Data
+    int (use the function int() to implementing type conversion to int)  
+    float  
+    bool  
+    str  
