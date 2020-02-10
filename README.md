@@ -36,7 +36,12 @@
   3. IDLE is the official standard development environment for python，it will be installed when we install the python
   
 ## Python Syntax Structure
-  1. indentation
+  1. Indentation
+    The different lines code that have the same indentation(like 4 space) is the same code block; this likes the java use the {} express a code block. the more rules of the python we can scan the "[PEP-8](https://www.python.org/dev/peps/pep-0008/" to know.
   2. Comment  
     1). One line comment: use the #  
-    2). Multi-line comments:  
+    2). Multi-line comments: use the """xxx"""  
+  3. How to name the Variable
+    1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "
+    2). the capital alphabet is different with the lower case alphabet
+    
