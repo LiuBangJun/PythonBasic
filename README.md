@@ -68,11 +68,15 @@
     int (use the function int() to implementing type conversion to int)  
     float  
     bool  
-    str：Create a string with single or double quotes  
-         len() is to get the long of the str  
-         Escape character: \n newline; \t Tabs; \r enter; \' single quotes; \" double quotes  
-         method: str() is conver the other type of data to str  
-         The essence of a string is a sequence of characters, so we can use '[0]' '[1]'...to extract each character  
+    str：1) Create a string with single or double quotes  
+         2) len() is to get the long of the str  
+         3) Escape character: \n newline; \t Tabs; \r enter; \' single quotes; \" double quotes  
+         4) method: str() is conver the other type of data to str  
+         5) The essence of a string is a sequence of characters, so we can use '[0]' '[1]'...to extract each character  
+         6) String immutable, we can use the method replace() to change the value and get a new string  
+         7) slice string: '[start, end: step]' to intercept a string(it include the start element not include the end element)  
+         8) split(): Splits a string into multiple substrings using the specified delimiter  
+         9) join(): the way is like '"*".join(a)'  
   5. Comparison operator  
     ==、!=、>、<、>=、<=  
     the difference between is and ==  
