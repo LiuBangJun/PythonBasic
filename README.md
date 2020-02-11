@@ -104,3 +104,20 @@
     or、and、not  
   7. print()  
     when we want the new print() is the same line with the previous print(), we can use the way print('aa', end='') to achieve  
+
+## Sequence
+  1. sequence is a way to store the data  
+  2. string、list、tuple、dictionary、set is all sequence  
+  3. list:  
+    1). list.append(x)
+    2). list.extend(alist)  
+    3). list.insert(index, x)
+    4). list.remove(x)  
+    5). list.pop(index, x)  
+    6). list.clear()  
+    7). list.index(x)  
+    8). list.count(x)  
+    9). len(list)  
+    10). list.reverse()  
+    11). list.sort()  
+    12). list.copy()  
