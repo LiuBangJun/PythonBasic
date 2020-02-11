@@ -76,7 +76,24 @@
          6) String immutable, we can use the method replace() to change the value and get a new string  
          7) slice string: '[start, end: step]' to intercept a string(it include the start element not include the end element)  
          8) split(): Splits a string into multiple substrings using the specified delimiter  
-         9) join(): the way is like '"*".join(a)'  
+         9) join(): the way is like '  "*".join(a)  '  
+         10) strip()  
+         11) capitalize()、title()、upper()、lower()、swapcase()  
+         12) center()、ljust()、rjust()  
+         13) isalnum()、isalpha()、isdigit()、isspace()、isupper()、islower()  
+         14） format(): example1: a= "name is :{0}, age is :{1}, address is {2}"; a.format('ray', 18, 'beijing') >>> the result is : name is ray, age is 18, address is beijing  
+         example2: "I am {0}, The number I like is {1:*>8}".format('ray', '666') >>> result: I am ray, The number I like is **666***  
+         15) Mutable string:  
+         example:  
+             >>>import io  
+             >>>s = "hello,sxt"  
+             >>>sio = io.StringIO(s)  
+             >>>sio.getvalue()  
+             hello,sxt  
+             >>>sio.seek(7)  
+             >>>sio.write('g')  
+             >>>sio.getvalue()  
+             hello,gxt  
   5. Comparison operator  
     ==、!=、>、<、>=、<=  
     the difference between is and ==  
