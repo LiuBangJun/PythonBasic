@@ -57,8 +57,8 @@
   type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
   value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
   
-  2. Quote
-  3. Identifier
+  2. Quote  
+  3. Identifier  
     1). module and bag name: all lower case, like: math  
     2). function name: all lower case, different words use the '_' to connect, like: my_name  
     3). class name: the first alphabet is capital of every words, (Hump principle） like: MyPhone  
@@ -81,7 +81,8 @@
          11) capitalize()、title()、upper()、lower()、swapcase()  
          12) center()、ljust()、rjust()  
          13) isalnum()、isalpha()、isdigit()、isspace()、isupper()、islower()  
-         14） format(): example1: a= "name is :{0}, age is :{1}, address is {2}"; a.format('ray', 18, 'beijing') >>> the result is : name is ray, age is 18, address is beijing  
+         14） format():   
+         example1: a= "name is :{0}, age is :{1}, address is {2}"; a.format('ray', 18, 'beijing') >>> the result is : name is ray, age is 18, address is beijing  
          example2: "I am {0}, The number I like is {1:*>8}".format('ray', '666') >>> result: I am ray, The number I like is **666***  
          15) Mutable string:  
          example:  
@@ -109,9 +110,9 @@
   1. sequence is a way to store the data  
   2. string、list、tuple、dictionary、set is all sequence  
   3. list:  
-    1). list.append(x)
+    1). list.append(x)  
     2). list.extend(alist)  
-    3). list.insert(index, x)
+    3). list.insert(index, x)  
     4). list.remove(x)  
     5). list.pop(index, x)  
     6). list.clear()  
