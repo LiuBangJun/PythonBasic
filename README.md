@@ -71,14 +71,15 @@
     str：Create a string with single or double quotes  
          len() is to get the long of the str  
          Escape character: \n newline; \t Tabs; \r enter; \' single quotes; \" double quotes  
-         
+         method: str() is conver the other type of data to str  
+         The essence of a string is a sequence of characters, so we can use '[0]' '[1]'...to extract each character  
   5. Comparison operator  
     ==、!=、>、<、>=、<=  
     the difference between is and ==  
       is: judge the two identifiers is or not the same object(Memory address)  
-      ==: judge the value of object is same or not, it as use the method: __eq__()  
+      ==: judge the value of object is same or not, it as use the method: '__eq__()'  
       notice: the number in -5 ~ 256 will be putted into cache for reuse  
   6. Logical Operators  
     or、and、not  
-  7. print()
-    when we want the new print() is the same line with the previous print(), we can use the way print('aa', end='') to achieve
+  7. print()  
+    when we want the new print() is the same line with the previous print(), we can use the way print('aa', end='') to achieve  
