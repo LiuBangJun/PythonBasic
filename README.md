@@ -122,5 +122,16 @@
     10). list.reverse()  
     11). list.sort()  
     12). list.copy()  
-    13). the method of adding elements to a list: append(element), + (list = list + 50), extend(list), insert(index, element), *(multiplication)
-    14). delete the element from a list: del list[1], 
+    13). the method of adding elements to a list: listName.append(element), + (listName = listName + 50), extend(list), listName.insert(index, element), *(multiplication)  
+    14). delete the element from a list: del listName[1], pop(index)(this method can return the element that we delete; if the index is none, it means delete the last element), listName.remove(element)(this method is to delete the element that it first appearance, if the element is not presence, it will return a error)  
+    15). the access of a list: listName[index](if the index is out of range, it will return a error), listName.index(element, [start, [end]]), listName.count(element) (get the element occurrence times in the list), len(listName), element in list (judge the element is in or not in the list)  
+    16). the slice of list: listName[start: end: step]  
+    17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
+    18). Two-dimensional list: listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming']] (listName[0][0] = rogy)  
+    '''
+    listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
+    for m in range(3):  
+	      for n in range(3):  
+		        print(listName[m][n], end='\t')  
+	      print()  
+    '''
