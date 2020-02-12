@@ -36,35 +36,35 @@
   3. IDLE is the official standard development environment for python，it will be installed when we install the python
   
 ## Python Syntax Structure
-  1. Indentation  
+  ###1. Indentation  
     The different lines code that have the same indentation(like 4 space) is the same code block; this likes the java use the {} express a code block. More rules of the python we can scan the "[PEP-8](https://www.python.org/dev/peps/pep-0008/)" to know.
-  2. Comment  
+   ###2. Comment  
     1). One line comment: use the #  
     2). Multi-line comments: use the """xxx"""  
-  3. How to name the Variable  
+   ###3. How to name the Variable  
     1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "  
     2). the capital alphabet is different with the lower case alphabet  
     3). we can not use the keywords(like if、and、else...) to name the variable
     4). begin and end with double underline has a special meaning, we should avoid when name a variable, like the '__init__' means a class
     5). when we use the variable, we must initialize it
     6). use the 'del variable' to delete a variable
-  4. Line connector  
+   ###4. Line connector  
     If the character is too many in one line code when we writing the code, we can use the line connector '\' to write the character in many lins  
 
 ## Object  
-  1. one Object is composed by identity、type、value  
+   ###1. one Object is composed by identity、type、value  
   identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity  
   type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
   value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
   
-  2. Quote  
-  3. Identifier  
+   ###2. Quote  
+   ###3. Identifier  
     1). module and bag name: all lower case, like: math  
     2). function name: all lower case, different words use the '_' to connect, like: my_name  
     3). class name: the first alphabet is capital of every words, (Hump principle） like: MyPhone  
     4). constant： all capital, like: MAX_SPEED  
     
-  4. Type of Data  
+   ###4. Type of Data  
     int (use the function int() to implementing type conversion to int)  
     float  
     bool  
@@ -95,22 +95,22 @@
              >>>sio.write('g')  
              >>>sio.getvalue()  
              hello,gxt  
-  5. Comparison operator  
+   ###5. Comparison operator  
     ==、!=、>、<、>=、<=  
     the difference between is and ==  
       is: judge the two identifiers is or not the same object(Memory address)  
       ==: judge the value of object is same or not, it as use the method: '__eq__()'  
       notice: the number in -5 ~ 256 will be putted into cache for reuse  
-  6. Logical Operators  
+   ###6. Logical Operators  
     or、and、not  
-  7. print()  
+   ###7. print()  
     when we want the new print() is the same line with the previous print(), we can use the way print('aa', end='') to achieve  
 
 ## Sequence
   1. sequence is a way to store the data  
   2. string、list、tuple、dictionary、set is all sequence  
-  3. list:  
-1). list.append(x)  
+   ###3. list:  
+    1). list.append(x)  
     2). list.extend(alist)  
     3). list.insert(index, x)  
     4). list.remove(x)  
@@ -128,10 +128,13 @@
     16). the slice of list: listName[start: end: step]  
     17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
     18). Two-dimensional list: listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming']] (listName[0][0] = rogy)  
-		'''
-		listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
-		for m in range(3):  
-			for n in range(3):  
-				print(listName[m][n], end='\t')  
-			print()  
-		'''
+    '''  
+    listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
+        for m in range(3):  
+            for n in range(3):  
+                print(listName[m][n], end='\t')  
+        print()  
+    '''
+  
+   ###4. Tuple
+     1). the method of create a tuple: tupleName = (element, )(remeber: if there is only one element of a tuple, we must add a ',' in the end); tupleName = tuple()
