@@ -122,3 +122,5 @@
     10). list.reverse()  
     11). list.sort()  
     12). list.copy()  
+    13). the method of adding elements to a list: append(element), + (list = list + 50), extend(list), insert(index, element), *(multiplication)
+    14). delete the element from a list: del list[1], 
