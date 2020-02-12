@@ -110,7 +110,7 @@
   1. sequence is a way to store the data  
   2. string、list、tuple、dictionary、set is all sequence  
   3. list:  
-    1). list.append(x)  
+1). list.append(x)  
     2). list.extend(alist)  
     3). list.insert(index, x)  
     4). list.remove(x)  
@@ -128,10 +128,10 @@
     16). the slice of list: listName[start: end: step]  
     17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
     18). Two-dimensional list: listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming']] (listName[0][0] = rogy)  
-    '''
-    listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
-    for m in range(3):  
-	      for n in range(3):  
-		        print(listName[m][n], end='\t')  
-	      print()  
-    '''
+		'''
+		listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
+		for m in range(3):  
+			for n in range(3):  
+				print(listName[m][n], end='\t')  
+			print()  
+		'''
