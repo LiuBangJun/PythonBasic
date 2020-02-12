@@ -36,34 +36,34 @@
   3. IDLE is the official standard development environment for python，it will be installed when we install the python
   
 ## Python Syntax Structure
-###1. Indentation  
+  1. Indentation  
     The different lines code that have the same indentation(like 4 space) is the same code block; this likes the java use the {} express a code block. More rules of the python we can scan the "[PEP-8](https://www.python.org/dev/peps/pep-0008/)" to know.
-###2. Comment  
+  2. Comment  
     1). One line comment: use the #  
     2). Multi-line comments: use the """xxx"""  
-###3. How to name the Variable  
+  3. How to name the Variable  
     1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "  
     2). the capital alphabet is different with the lower case alphabet  
     3). we can not use the keywords(like if、and、else...) to name the variable
     4). begin and end with double underline has a special meaning, we should avoid when name a variable, like the '__init__' means a class
     5). when we use the variable, we must initialize it
     6). use the 'del variable' to delete a variable  
-###4. Line connector  
+  4. Line connector  
     If the character is too many in one line code when we writing the code, we can use the line connector '\' to write the character in many lins  
 
 ## Object  
-###1. one Object is composed by identity、type、value  
-  identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity  
-  type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
-  value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
+  1. one Object is composed by identity、type、value  
+    identity: is to uniquely identifying the object, we can use the function: id(obj) to return the obj's identity  
+    type: represents the type of data the object stores, use the function: type(obj) return the obj's tpye  
+    value: represents the information of the data that stored by the object, use the function: print(obj) can get the value of object  
   
-###2. Quote  
-###3. Identifier  
+  2. Quote  
+  3. Identifier  
     1). module and bag name: all lower case, like: math  
     2). function name: all lower case, different words use the '_' to connect, like: my_name  
     3). class name: the first alphabet is capital of every words, (Hump principle） like: MyPhone  
     4). constant： all capital, like: MAX_SPEED  
-###4. Type of Data  
+  4. Type of Data  
     int (use the function int() to implementing type conversion to int)  
     float  
     bool  
@@ -94,15 +94,13 @@
              >>>sio.write('g')  
              >>>sio.getvalue()  
              hello,gxt  
-###5. Comparison operator  
-    ==、!=、>、<、>=、<=  
-    the difference between is and ==  
-      is: judge the two identifiers is or not the same object(Memory address)  
-      ==: judge the value of object is same or not, it as use the method: '__eq__()'  
+  5. Comparison operator： ==、!=、>、<、>=、<=  
+      The difference between is and ==  
+        is: judge the two identifiers is or not the same object(Memory address)  
+        ==: judge the value of object is same or not, it as use the method: '__eq__()'  
       notice: the number in -5 ~ 256 will be putted into cache for reuse  
-###6. Logical Operators  
-    or、and、not  
-###7. print()  
+  6. Logical Operators： or、and、not  
+  7. print()  
     when we want the new print() is the same line with the previous print(), we can use the way print('aa', end='') to achieve  
 
 ## Sequence
@@ -139,23 +137,23 @@
      1). the method of create a tuple: tupleName = (element, )(remeber: if there is only one element of a tuple, we must add a ',' in the end); tupleName = tuple()  
      2). notice: a tuple can not be revised; and the other methods is like a list  
      3). zip()  
-     '''  
-     >>> a = [10, 20, 30]  
-     >>> b = [40, 50, 60]  
-     >>> c = [70, 80, 90]  
-     >>> d = zip(a, b, c)  
-     >>> list(d)  
-     [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
-     '''  
+        '''  
+        >>> a = [10, 20, 30]  
+        >>> b = [40, 50, 60]  
+        >>> c = [70, 80, 90]  
+        >>> d = zip(a, b, c)  
+        >>> list(d)  
+        [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
+        '''  
   5. Dictionary  
      1). the method of create a dictionary: dictName = {} or dictName = dict(name='rogy', age=18)  
      2). zip()  
-     '''  
-     >>> keys = ['name', 'age', 'job']  
-     >>> values = ['rogy', 18, 'teacher']  
-     >>> d = dict(zip(keys, values))  
-     >>> d  
-     >>> {'name':'rogy', 'age':18, 'job':'teacher'}  
+        '''  
+        >>> keys = ['name', 'age', 'job']  
+        >>> values = ['rogy', 18, 'teacher']  
+        >>> d = dict(zip(keys, values))  
+        >>> d  
+        >>> {'name':'rogy', 'age':18, 'job':'teacher'}  
      3). dictName = {key1:value1, key2:value2,...}(in a dict, the key only can be appear once)  
      4). dictName[key1] = value1 or dictName.get(key1) = value1(in this way, if the key is not existence， is will return None, the first way will return a error)  
      5). dictName1.update(dictName2)  
