@@ -190,17 +190,17 @@
   5. Select structure nesting: (if...if...else...else...; must notice the indentation)  
   example code:  
   ```
-  score = int(input("请输入一个在 0-100 之间的数字："))  
+  score = int(input("Please entry a number in 0-100："))  
   degree = "ABCDE"  
   num = 0  
   if score>100 or score<0:  
-    score = int(input("输入错误！请重新输入一个在 0-100 之间的数字："))  
+    score = int(input("Wrong input! Please entry a new number in 0-100:"))  
   else:  
     num = score//10  
     if num<6:  
       num=5
       
-    print("分数是{0},等级是{1}".format(score,degree[9-num]))
+    print("score is {0},degree is {1}".format(score,degree[9-num]))
   ```
   
 ## Cycle Structure
@@ -214,3 +214,11 @@
       print(x, end="\t")
     print()  # newline
   ```
+  
+  ```
+  for m in range(1, 10):
+    for n in range(1, m+1):
+      print("{0}*{1} = {2}".format(m, n, (m*n)), end="\t")
+    print()
+  ```
+  
