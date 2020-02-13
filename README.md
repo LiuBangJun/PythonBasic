@@ -88,11 +88,13 @@
          # '>>>'means the result of the code!  
          >>> the result is : name is ray, age is 18, address is beijing  
 ```
+
          example code2:  
+
 ```
-         "I am {0}, The number I like is {1:*>8}".format('ray', '666') 
-         # '>>>'means the result of the code!
-         >>> result: I am ray, The number I like is **666***  
+           "I am {0}, The number I like is {1:*>8}".format('ray', '666') 
+           # '>>>'means the result of the code!
+           >>> result: I am ray, The number I like is **666***  
 ```  
          15) Mutable string:  
          example code:  
@@ -205,3 +207,10 @@
   1. while  
   2. for  
   3. Iterable object：sequence, dictionary, iterator, generator  
+  4. Nested loop：  
+  ```
+  for x in range(5):
+    for y in range(5):
+      print(x, end="\t")
+    print()  # newline
+  ```
