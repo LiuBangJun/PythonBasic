@@ -125,36 +125,40 @@
     16). the slice of list: listName[start: end: step]  
     17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
     18). Two-dimensional list: listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming']] (listName[0][0] = rogy)  
-    '''  
-    listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming'], ['jon', 22, 'changsha']]  
+    ```  
+    listName = [['rogy', 18, 'beijing'], 
+                ['ray', 20, 'kunming'], 
+                ['jon', 22, 'changsha']]  
         for m in range(3):  
             for n in range(3):  
                 print(listName[m][n], end='\t')  
         print()  
-    '''
+    ```
   
   4. Tuple
      1). the method of create a tuple: tupleName = (element, )(remeber: if there is only one element of a tuple, we must add a ',' in the end); tupleName = tuple()  
      2). notice: a tuple can not be revised; and the other methods is like a list  
      3). zip()  
        ```  
-       >>> a = [10, 20, 30]  
-       >>> b = [40, 50, 60]  
-       >>> c = [70, 80, 90]  
-       >>> d = zip(a, b, c)  
-       >>> list(d)  
-       [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
+       a = [10, 20, 30]  
+       b = [40, 50, 60]  
+       c = [70, 80, 90]  
+       d = zip(a, b, c)  
+       list(d)  
+       # '>>>'means the result of the code!
+       >>> [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
        ```  
   5. Dictionary  
      1). the method of create a dictionary: dictName = {} or dictName = dict(name='rogy', age=18)  
      2). zip()  
-        '''  
-        >>> keys = ['name', 'age', 'job']  
-        >>> values = ['rogy', 18, 'teacher']  
-        >>> d = dict(zip(keys, values))  
-        >>> d  
+        ```  
+        keys = ['name', 'age', 'job']  
+        values = ['rogy', 18, 'teacher']  
+        d = dict(zip(keys, values))  
+        d  
+        # '>>>'means the result of the code!
         >>> {'name':'rogy', 'age':18, 'job':'teacher'}  
-        '''
+        ```
      3). dictName = {key1:value1, key2:value2,...}(in a dict, the key only can be appear once)  
      4). dictName[key1] = value1 or dictName.get(key1) = value1(in this way, if the key is not existence， is will return None, the first way will return a error)  
      5). dictName1.update(dictName2)  
@@ -167,6 +171,20 @@
   3. Ternary conditional operator: (condition is True if condition expression else condition is False)  
   4. Multi-branch selection structure:(if...elif...elif...else...)  
   5. Select structure nesting: (if...if...else...else...; must notice the indentation)  
+  example code:  
+  ```
+  score = int(input("请输入一个在 0-100 之间的数字："))  
+  degree = "ABCDE"  
+  num = 0  
+  if score>100 or score<0:  
+    score = int(input("输入错误！请重新输入一个在 0-100 之间的数字："))  
+  else:  
+    num = score//10  
+    if num<6:  
+      num=5
+      
+    print("分数是{0},等级是{1}".format(score,degree[9-num]))
+  ```
   
 ## Cycle Structure
   1. while  
