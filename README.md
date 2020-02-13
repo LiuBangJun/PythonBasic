@@ -137,14 +137,14 @@
      1). the method of create a tuple: tupleName = (element, )(remeber: if there is only one element of a tuple, we must add a ',' in the end); tupleName = tuple()  
      2). notice: a tuple can not be revised; and the other methods is like a list  
      3). zip()  
-        '''  
-        >>> a = [10, 20, 30]  
-        >>> b = [40, 50, 60]  
-        >>> c = [70, 80, 90]  
-        >>> d = zip(a, b, c)  
-        >>> list(d)  
-        [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
-        '''  
+       '''  
+       >>> a = [10, 20, 30]  
+       >>> b = [40, 50, 60]  
+       >>> c = [70, 80, 90]  
+       >>> d = zip(a, b, c)  
+       >>> list(d)  
+       [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
+       '''  
   5. Dictionary  
      1). the method of create a dictionary: dictName = {} or dictName = dict(name='rogy', age=18)  
      2). zip()  
@@ -154,7 +154,12 @@
         >>> d = dict(zip(keys, values))  
         >>> d  
         >>> {'name':'rogy', 'age':18, 'job':'teacher'}  
+        '''
      3). dictName = {key1:value1, key2:value2,...}(in a dict, the key only can be appear once)  
      4). dictName[key1] = value1 or dictName.get(key1) = value1(in this way, if the key is not existence， is will return None, the first way will return a error)  
      5). dictName1.update(dictName2)  
      6). del(dictName[key])  
+
+##Select Structure
+  1. Single Branch Selection Structure  
+  
