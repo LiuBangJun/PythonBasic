@@ -81,19 +81,34 @@
          12) center()、ljust()、rjust()  
          13) isalnum()、isalpha()、isdigit()、isspace()、isupper()、islower()  
          14） format():   
-         example1: a= "name is :{0}, age is :{1}, address is {2}"; a.format('ray', 18, 'beijing') >>> the result is : name is ray, age is 18, address is beijing  
-         example2: "I am {0}, The number I like is {1:*>8}".format('ray', '666') >>> result: I am ray, The number I like is **666***  
+         example code1:  
+         ```
+         a= "name is :{0}, age is :{1}, address is {2}"; 
+         a.format('ray', 18, 'beijing') 
+         # '>>>'means the result of the code!
+         >>> the result is : name is ray, age is 18, address is beijing  
+         ```
+         example code2:  
+         ```
+         "I am {0}, The number I like is {1:*>8}".format('ray', '666') 
+         # '>>>'means the result of the code!
+         >>> result: I am ray, The number I like is **666***  
+         ```
          15) Mutable string:  
-         example:  
-             >>>import io  
-             >>>s = "hello,sxt"  
-             >>>sio = io.StringIO(s)  
-             >>>sio.getvalue()  
-             hello,sxt  
-             >>>sio.seek(7)  
-             >>>sio.write('g')  
-             >>>sio.getvalue()  
-             hello,gxt  
+         example code:  
+             ```
+             import io  
+             s = "hello,sxt"  
+             sio = io.StringIO(s)  
+             sio.getvalue()  
+             # '>>>'means the result of the code!
+             >>> hello,sxt  
+             sio.seek(7)  
+             sio.write('g')  
+             sio.getvalue()  
+             # '>>>'means the result of the code!
+             >>> hello,gxt  
+             ```
   5. Comparison operator： ==、!=、>、<、>=、<=  
       The difference between is and ==  
         is: judge the two identifiers is or not the same object(Memory address)  
@@ -124,7 +139,7 @@
     15). the access of a list: listName[index](if the index is out of range, it will return a error), listName.index(element, [start, [end]]), listName.count(element) (get the element occurrence times in the list), len(listName), element in list (judge the element is in or not in the list)  
     16). the slice of list: listName[start: end: step]  
     17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
-    18). Two-dimensional list: listName = [['rogy', 18, 'beijing'], ['ray', 20, 'kunming']] (listName[0][0] = rogy)  
+    18). Two-dimensional list:   
     ```  
     listName = [['rogy', 18, 'beijing'], 
                 ['ray', 20, 'kunming'], 
