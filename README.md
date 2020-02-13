@@ -141,7 +141,8 @@
     15). the access of a list: listName[index](if the index is out of range, it will return a error), listName.index(element, [start, [end]]), listName.count(element) (get the element occurrence times in the list), len(listName), element in list (judge the element is in or not in the list)  
     16). the slice of list: listName[start: end: step]  
     17). the sort of a list: listName.sort()(ascending order), listName.sort(reverse=True) (descending), random.shuffle(listName) {all of the up method is change the presence list}; listName.sorted() (this method is to create a new list to save the result)  
-    18). Two-dimensional list:   
+    18). Two-dimensional list:  
+    
     ```  
     listName = [['rogy', 18, 'beijing'], 
                 ['ray', 20, 'kunming'], 
