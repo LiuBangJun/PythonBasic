@@ -137,14 +137,14 @@
      1). the method of create a tuple: tupleName = (element, )(remeber: if there is only one element of a tuple, we must add a ',' in the end); tupleName = tuple()  
      2). notice: a tuple can not be revised; and the other methods is like a list  
      3). zip()  
-       '''  
+       ```  
        >>> a = [10, 20, 30]  
        >>> b = [40, 50, 60]  
        >>> c = [70, 80, 90]  
        >>> d = zip(a, b, c)  
        >>> list(d)  
        [(10, 40, 70), (20, 50, 80), (30, 60, 90)]  
-       '''  
+       ```  
   5. Dictionary  
      1). the method of create a dictionary: dictName = {} or dictName = dict(name='rogy', age=18)  
      2). zip()  
@@ -160,6 +160,15 @@
      5). dictName1.update(dictName2)  
      6). del(dictName[key])  
 
-##Select Structure
-  1. Single Branch Selection Structure  
+
+## Select Structure
+  1. Single Branch Selection Structure:(if...)  
+  2. Double Branch Selection Structure:(if...else...)  
+  3. Ternary conditional operator: (condition is True if condition expression else condition is False)  
+  4. Multi-branch selection structure:(if...elif...elif...else...)  
+  5. Select structure nesting: (if...if...else...else...; must notice the indentation)  
   
+## Cycle Structure
+  1. while  
+  2. for  
+  3. Iterable object：sequence, dictionary, iterator, generator  
