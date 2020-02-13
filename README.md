@@ -80,7 +80,8 @@
          11) capitalize()、title()、upper()、lower()、swapcase()  
          12) center()、ljust()、rjust()  
          13) isalnum()、isalpha()、isdigit()、isspace()、isupper()、islower()  
-         14） format():  
+         14) use the join to concatenate multiple strings  
+         15） format():  
          example code1:  
 ```
          a= "name is :{0}, age is :{1}, address is {2}"  
@@ -223,3 +224,9 @@
     print()
   ```
   
+  5. break and continue  
+  6. Loop optimization  
+    1). reduce calculations inside the loop  
+    2). in the nested loop, reduce the caculation of the inner loop  
+    3). using local variables  
+    
