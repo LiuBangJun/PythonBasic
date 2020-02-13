@@ -80,23 +80,23 @@
          11) capitalize()、title()、upper()、lower()、swapcase()  
          12) center()、ljust()、rjust()  
          13) isalnum()、isalpha()、isdigit()、isspace()、isupper()、islower()  
-         14） format():   
+         14） format():  
          example code1:  
-         ```
-         a= "name is :{0}, age is :{1}, address is {2}"; 
-         a.format('ray', 18, 'beijing') 
-         # '>>>'means the result of the code!
+```
+         a= "name is :{0}, age is :{1}, address is {2}"  
+         a.format('ray', 18, 'beijing')  
+         # '>>>'means the result of the code!  
          >>> the result is : name is ray, age is 18, address is beijing  
-         ```
+```
          example code2:  
-         ```
+```
          "I am {0}, The number I like is {1:*>8}".format('ray', '666') 
          # '>>>'means the result of the code!
          >>> result: I am ray, The number I like is **666***  
-         ```
+```  
          15) Mutable string:  
          example code:  
-             ```
+```
              import io  
              s = "hello,sxt"  
              sio = io.StringIO(s)  
@@ -108,7 +108,7 @@
              sio.getvalue()  
              # '>>>'means the result of the code!
              >>> hello,gxt  
-             ```
+ ```
   5. Comparison operator： ==、!=、>、<、>=、<=  
       The difference between is and ==  
         is: judge the two identifiers is or not the same object(Memory address)  
