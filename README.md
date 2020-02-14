@@ -230,3 +230,15 @@
     2). in the nested loop, reduce the caculation of the inner loop  
     3). using local variables  
     
+  7. zip()  
+  ```
+  names = ('rogy', 'ray', 'tom')
+  ages = (18, 22, 20)
+  cities = ('beijing', 'tianjin', 'shanghai')
+  
+  for name, age, city in zip(names, anges, cities):
+    print("name is {0}, age is {1}, city is {2}".format(name, age, city))
+  
+  for i in range(3):
+    print("name is {0}, age is {1}, city is {2}".format(names[i], ages[i], cities[i]))
+  ```
