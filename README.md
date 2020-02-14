@@ -242,3 +242,32 @@
   for i in range(3):
     print("name is {0}, age is {1}, city is {2}".format(names[i], ages[i], cities[i]))
   ```
+  8. Comprehension  
+    1). list comprehension:  
+    ```
+    y = [x for x in range(1,5)]
+    print(y)
+    m = [x*2 for x in range(1, 50) if x%5 == 0]
+    print(m)
+    cells = [(row, col) for row in range(1, 10) for col in range(1, 10)]
+    print(cells)
+    ```
+    2). dictionary comprehension:  
+    ```
+    my_text = " i love you, i love set, i love gaoqi"
+    char_count = {c: my_text.count(c) for c in my_text}
+    print(char_count)
+    ```
+    3). set comprehension:  
+    ```
+    b = {x for x in range(1, 100) if x%9 == 0}
+    print(b)
+    ```
+    4). generator comprehension:  
+    notice: one generator only can run once  
+    ```
+    gnt = (x for x in range(10) if x%9==0)
+    for x in gnt:
+      print(x, end=" ")
+    ```
+    
