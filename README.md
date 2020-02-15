@@ -271,37 +271,38 @@
       print(x, end=" ")
     ```
     practise：
-    ```
-    import turtle
+      ```
+      import turtle
 
-    my_colors = ['red', 'yellow', 'green', 'black', 'pink']
-    t = turtle.Pen()
-    for i in range(12):
-      t.goto(0, -i*10)  # 0, -100, -200, -300, -400
-      t.pendown()
-      t.color(my_colors[i%len(my_colors)])
-      t.circle(20 + i*10)  # 100, 200, 300, 400
-      t.penup()
-    turtle.done()  # 程序执行完毕，窗口任然在
-    ```
-    
+      my_colors = ['red', 'yellow', 'green', 'black', 'pink']
+      t = turtle.Pen()
+      for i in range(12):
+        t.goto(0, -i*10)  # 0, -100, -200, -300, -400
+        t.pendown()
+        t.color(my_colors[i%len(my_colors)])
+        t.circle(20 + i*10)  # 100, 200, 300, 400
+        t.penup()
+      turtle.done()  # 程序执行完毕，窗口任然在
+      ```
     practise2:
     
-    ```
-    import turtle
-    t = turtle.Pen()
-    # 画棋盘
-    t.speed(0)
-    for i in range(19):
-      t.penup()
-      t.goto(-180, 180-i*20)
-      t.pendown()
-      t.goto(180, 180-i*20)
+      ```
+      import turtle
+      t = turtle.Pen()
+      # 画棋盘
+      t.speed(0)
+      for i in range(19):
+        t.penup()
+        t.goto(-180, 180-i*20)
+        t.pendown()
+        t.goto(180, 180-i*20)
 
-    for j in range(19):
-      t.penup()
-      t.goto(-180+j*20, 180)
-      t.pendown()
-      t.goto(-180+j*20, -180)
-    turtle.done()
-    ```
+      for j in range(19):
+        t.penup()
+        t.goto(-180+j*20, 180)
+        t.pendown()
+        t.goto(-180+j*20, -180)
+      turtle.done()
+      ```
+
+## Function
