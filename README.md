@@ -286,7 +286,7 @@
       ```  
     practise2:  
     
-      ```  
+      ```
       import turtle  
       t = turtle.Pen()  
       # 画棋盘  
@@ -303,6 +303,20 @@
         t.pendown()  
         t.goto(-180+j*20, -180)  
       turtle.done()  
-      ```  
-
+      ```
+      
 ## Function
+  1. define a function:  
+  remeber: the name of a function must be right  
+    ```
+    # the way to define a function
+    def test_1():
+      print("*"*10)
+      print("@"*10)
+    print(id(test_1))
+    print(type(test_1))
+    print(test_1)
+    
+    test_1()  # function call
+    ```
+  2. 
