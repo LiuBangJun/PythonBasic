@@ -270,7 +270,7 @@
       for x in gnt:  
         print(x, end=" ")  
       ```  
-    practise:  
+     practise:  
       ```  
       import turtle  
 
