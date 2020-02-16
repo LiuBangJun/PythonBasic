@@ -244,65 +244,65 @@
   ```
   8. Comprehension  
     1). list comprehension:  
-    ```
-    y = [x for x in range(1,5)]
-    print(y)
-    m = [x*2 for x in range(1, 50) if x%5 == 0]
-    print(m)
-    cells = [(row, col) for row in range(1, 10) for col in range(1, 10)]
-    print(cells)
-    ```
+    ```  
+    y = [x for x in range(1,5)]  
+    print(y)  
+    m = [x*2 for x in range(1, 50) if x%5 == 0]  
+    print(m)  
+    cells = [(row, col) for row in range(1, 10) for col in range(1, 10)]  
+    print(cells)  
+    ```  
     2). dictionary comprehension:  
-    ```
-    my_text = " i love you, i love set, i love gaoqi"
-    char_count = {c: my_text.count(c) for c in my_text}
-    print(char_count)
-    ```
+    ```  
+    my_text = " i love you, i love set, i love gaoqi"  
+    char_count = {c: my_text.count(c) for c in my_text}  
+    print(char_count)  
+    ```  
     3). set comprehension:  
-    ```
-    b = {x for x in range(1, 100) if x%9 == 0}
-    print(b)
-    ```
+    ```  
+    b = {x for x in range(1, 100) if x%9 == 0}  
+    print(b)  
+    ```  
     4). generator comprehension:  
     notice: one generator only can run once  
-    ```
-    gnt = (x for x in range(10) if x%9==0)
-    for x in gnt:
-      print(x, end=" ")
-    ```
-    practise：
-      ```
-      import turtle
+    ```  
+    gnt = (x for x in range(10) if x%9==0)  
+    for x in gnt:  
+      print(x, end=" ")  
+    ```  
+    practise:  
+      ```  
+      import turtle  
 
-      my_colors = ['red', 'yellow', 'green', 'black', 'pink']
-      t = turtle.Pen()
-      for i in range(12):
-        t.goto(0, -i*10)  # 0, -100, -200, -300, -400
-        t.pendown()
-        t.color(my_colors[i%len(my_colors)])
-        t.circle(20 + i*10)  # 100, 200, 300, 400
-        t.penup()
-      turtle.done()  # 程序执行完毕，窗口任然在
-      ```
-    practise2:
+      my_colors = ['red', 'yellow', 'green', 'black', 'pink']  
+      t = turtle.Pen()  
+      for i in range(12):  
+        t.goto(0, -i*10)  # 0, -100, -200, -300, -400  
+        t.pendown()  
+        t.color(my_colors[i%len(my_colors)])  
+        t.circle(20 + i*10)  # 100, 200, 300, 400  
+        t.penup()  
+      turtle.done()  # 程序执行完毕，窗口任然在  
+      ```  
+    practise2:  
     
-      ```
-      import turtle
-      t = turtle.Pen()
-      # 画棋盘
-      t.speed(0)
-      for i in range(19):
-        t.penup()
-        t.goto(-180, 180-i*20)
-        t.pendown()
-        t.goto(180, 180-i*20)
+      ```  
+      import turtle  
+      t = turtle.Pen()  
+      # 画棋盘  
+      t.speed(0)  
+      for i in range(19):  
+        t.penup()  
+        t.goto(-180, 180-i*20)  
+        t.pendown()  
+        t.goto(180, 180-i*20)  
 
-      for j in range(19):
-        t.penup()
-        t.goto(-180+j*20, 180)
-        t.pendown()
-        t.goto(-180+j*20, -180)
-      turtle.done()
-      ```
+      for j in range(19):  
+        t.penup()  
+        t.goto(-180+j*20, 180)  
+        t.pendown()  
+        t.goto(-180+j*20, -180)  
+      turtle.done()  
+      ```  
 
 ## Function
