@@ -451,4 +451,4 @@
       b: [10, 20, [5, 6, 7], 30]
     """
     ```
-    ![image](https://github.com/LiuBangJun/PythonBasic/blob/master/images3/copy%20and%20deepcopy.png)
+    ![images3](https://github.com/LiuBangJun/PythonBasic/blob/master/images3/copy%20and%20deepcopy.png)
