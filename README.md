@@ -396,6 +396,7 @@
   7. copy and deepcopy  
     difference: copy is just copying references to child objects  
                 deepcopy it will copy the RAM of child objects  
+    ![images3](https://github.com/LiuBangJun/PythonBasic/blob/master/images3/copy%20and%20deepcopy.png)
     ```
     import copy
 
@@ -451,4 +452,4 @@
       b: [10, 20, [5, 6, 7], 30]
     """
     ```
-    ![images3](https://github.com/LiuBangJun/PythonBasic/blob/master/images3/copy%20and%20deepcopy.png)
+    
