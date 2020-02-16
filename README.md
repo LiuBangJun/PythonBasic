@@ -345,3 +345,109 @@
   c = numbers_avg(20, 30)
   print(c)
   ```
+  
+  4. Global variables and Local variables  
+  ```
+  a = 100 # global variable
+  def function1():
+    b = 200 # local variable, only can be used in the function
+    global c = 300 # define a global variable in a function, and can be used like a  global variable
+  ```
+  
+  5. the effectiveness of global variables and local variable
+  ```
+  import math
+  import time
+  
+  def test01():
+    start = time.time()
+    for i in range(1000000):
+      math.sqrt(30)
+    end = time.time()
+    print("use time {0}".format((end-start))
+    
+  def test02():
+    b = math.sqrt
+    start = time.time()
+    for i in range(1000000):
+      b(30)
+    end = time.time()
+    print("use time {0}".format((end-start))
+  
+  test01()
+  test02()
+  ```
+  
+  6. Passing mutable objects
+  ```
+  a = [10, 20]
+  print(id(a))
+  print(a)
+  print("*"*10)
+  def test01(m):
+    print(id(m))
+    m.append(30)
+    print(id(m)
+    
+  test01(a)
+  print(a)
+  ```
+  
+  7. copy and deepcopy  
+    difference: copy is just copying references to child objects  
+                deepcopy it will copy the RAM of child objects  
+    ```
+    import copy
+
+    def testCopy():
+        """testing the copy"""
+        print("the result of copy!")
+        a = [10, 20, [5, 6]]
+        b = copy.copy(a)
+
+        print("a:", a)
+        print("b:", b)
+
+        b.append(30)
+        b[2].append(7)
+
+        print("after copy...")
+        print("a:", a)
+        print("b:", b)
+
+    def testDeepCopy():
+        """testing the deepcopy"""
+        print("="*20)
+        print("the result of deepcopy!")
+        a = [10, 20, [5, 6]]
+        b = copy.deepcopy(a)
+
+        print("a:", a)
+        print("b:", b)
+
+        b.append(30)
+        b[2].append(7)
+
+        print("after deepcopy...")
+        print("a:", a)
+        print("b:", b)
+
+    testCopy()
+    testDeepCopy()
+    """
+    the result of this code is:
+      the result of copy!
+      a: [10, 20, [5, 6]]
+      b: [10, 20, [5, 6]]
+      after copy...
+      a: [10, 20, [5, 6, 7]]
+      b: [10, 20, [5, 6, 7], 30]
+      ====================
+      the result of deepcopy!
+      a: [10, 20, [5, 6]]
+      b: [10, 20, [5, 6]]
+      after deepcopy...
+      a: [10, 20, [5, 6]]
+      b: [10, 20, [5, 6, 7], 30]
+    """
+    ```
