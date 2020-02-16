@@ -454,3 +454,66 @@
     """
     ```
     
+  8. lambda:  
+    1). lambda arg1, arg2 ... : <expression>
+  
+      ```
+      g = [lambda a : a*2, lambda b : b*3]
+      print(g[0](6))
+      print(g[1](5))
+      ```
+  9. eval()
+  
+    ```
+    s = "print('abcd')"
+    eval(s)
+    # result is >>> abcd
+    a = 10
+    b = 20
+    c = eval('a + b')
+    print(c)
+    dict1 = dict(a = 100, b = 200)
+    d = eval("a+b", dict1)
+    print(d)
+    ```
+  
+  10. recursive function
+  
+    ```
+    def test01(n):
+      print("test01: ", n)
+      if n == 0:
+        print("over!")
+      else:
+        test01(n-1)
+        
+      print("test01***", n)
+
+    test01(4)
+    ```
+    
+  example:  
+  
+    ```
+    def jiec(n):
+      if n == 1:
+        return 1
+      else:
+        return n*jiec(n-1)
+
+    result = jiec(5)
+    print(result)
+    ```
+  
+  11. Nested function
+  
+  ```
+  def outer01():
+    print("outer running")
+    
+    def inner01():
+      print("inner running")
+      
+    inner01()
+  outer01()
+  ```
