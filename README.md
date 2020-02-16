@@ -320,4 +320,28 @@
     
     test_1()  # function call
     ```
-  2. 
+  2. Formal parameter and Actual parameter
+  
+  ```
+  def printMax(a, b):  # a, b is Formal parameter
+    """compare the bigger in two numbers and print the bigger"""
+    if a > b:
+      print(a, "bigger")
+    else:
+      print(b, "bigger")
+      
+  printMax(30, 50)  # 30, 50 is Actual parameter
+  help(printMax.__doc__)  # this method is to get the Docstring of a function
+  ```
+  
+  3. return value of a function
+  
+  ```
+  def numbers_avg(a, b):
+    # the return code is to backtrack the value of function
+    # the return statement is also end the running of function
+    return (a+b)/2
+    print("hello")  # this code will not be running, because the return statement end the running of this function
+  c = numbers_avg(20, 30)
+  print(c)
+  ```
