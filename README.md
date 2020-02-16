@@ -496,10 +496,10 @@
   
     ```
     def jiec(n):
-      if n == 1:
-        return 1
-      else:
-        return n*jiec(n-1)
+        if n == 1:
+            return 1
+        else:
+            return n*jiec(n-1)
 
     result = jiec(5)
     print(result)
@@ -509,11 +509,51 @@
   
   ```
   def outer01():
-    print("outer running")
-    
-    def inner01():
-      print("inner running")
-      
-    inner01()
+      print("outer running")
+
+      def inner01():
+          print("inner running")
+
+      inner01()
   outer01()
   ```
+  
+  12. nonlocal  
+  ```
+  def outer():
+      b = 10
+
+      def inner():
+          nonlocal b
+          print("inner b:", b)
+          b = 20
+
+      inner()
+      print("outer b:", b)
+  outer()
+  ```
+  
+  13. LEGB rule  
+    local ---enclosed ---global ---built in  
+    
+
+## Object oriented Programming (OOP)  
+  1. Procedure Oriented  
+  
+  2. class
+  
+  ```
+  class Student:
+      
+      def __init__(self, name, score):
+          self.name = name
+          self.score = score
+          
+      def say_score(self):
+          print("the score of {0} is {1}".format(self.name, self.score))
+          
+  s1 = Student("rogy", 18)
+  s1.say_score()
+  ```
+  
+  
