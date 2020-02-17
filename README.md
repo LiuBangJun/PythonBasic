@@ -545,15 +545,65 @@
   ```
   class Student:
       
+      count = 0 # Class attribute
+      company = "SXT" # Class attribute
+      
       def __init__(self, name, score):
-          self.name = name
+          self.name = name # Instance attribute
           self.score = score
-          
-      def say_score(self):
+          Student.count = Student.count + 1
+      
+      # Garbage Collection
+      def __del__(self):
+          print("delete the object: {0}".format(self))
+      
+      def __call__(self, *arg, **kwarg):
+          print("calculate the salary!")
+          return 30000
+      
+      def say_score(self): # Instance method
           print("the score of {0} is {1}".format(self.name, self.score))
+      
+      # Method Rewrite can work in python
+      def say_score(self):
+          print("Method Rewrite is not working in python!")
           
-  s1 = Student("rogy", 18)
-  s1.say_score()
-  ```
+      @classmethod
+      def PrintCompany(cls):
+          print(cls.company)
+      
+      @staticmethod
+      def add(a, b):
+          print("{0} + {1} = {2}".format(a, b, (a+b))
+          return a+b
+          
+      def learning(self):
+          print("learning!")
   
+  def play_game(s):
+      print("{0} is playing game!".format(s))
+      
+  Student.play = play_game;
+  
+  print(type(Student))
+  print(id(Student))
+  
+  s1 = Student("rogy", 18)
+  print(s1)
+  s1.say_score() # >>>Student.say_score(s1)
+  s1.salary = 30000
+  
+  s1.learning()
+  s1.play()
+          
+  stu2 = Studnet
+  s2 = stu2()
+  s2.say_score()
+  
+  salary = Student()
+  
+  Student.PrintCompany()
+  del s2
+  print("end of thd code!")
+  ```
   
