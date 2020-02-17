@@ -583,7 +583,7 @@
   def play_game(s):
       print("{0} is playing game!".format(s))
       
-  Student.play = play_game;
+  Student.play = play_game
   
   print(type(Student))
   print(id(Student))
