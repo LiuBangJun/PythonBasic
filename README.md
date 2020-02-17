@@ -607,3 +607,82 @@
   print("end of thd code!")
   ```
   
+  2). private
+  ```
+  class Employee:
+      __company = "Future Technology"
+      
+      def __init__(self, name, age):
+          self.name = name
+          self.__age = age # private property
+      
+      def __work(self): # private method
+          print("working hard...")
+          print("age is :{0}".format(self.__age))
+          print("Employee.__company")
+          
+  print(dir(e))
+  e = Employee("rogy", 18)
+  print(e.name)
+  print(e._Employee__age)
+  
+  e._Employee__work()
+  print(Employee._Employee__company)
+  ```
+  
+  3. @property
+  ```
+  class Employee:
+      
+      @property
+      def salary(self):
+          print("salary...")
+          return 10000
+          
+  empl = Employee()
+  print(empl.salary)
+  ```
+  
+  1) the use of @property
+  ```
+  class Employee:
+
+    def __init__(self, name, salary):
+      self.__name = name
+      self.__salary = salary
+
+    @property
+    def salary(self):
+      return self.__salary
+
+    @salary.setter
+    def salary(self, salary):
+      if 1000<salary<50000:
+        self.__salary = salary
+      else:
+        print("wrong input, the salary is between 1000 and 50000!")
+
+    # def get_salary(self):
+    # 	return self.__salary
+
+    # def set_salary(self, salary):
+    # 	if 1000<salary<50000:
+    # 		self.__salary = salary
+    # 	else:
+    # 		print("wrong input, the salary is between 1000 and 50000!")
+
+  empl = Employee("rogy", 30000)
+  # print(empl.get_salary())
+  # empl.set_salary(20000)
+  # print(empl.get_salary())
+  print(empl.salary)
+  empl.salary = -20000
+  print(empl.salary)
+  ```
+  
+  4. Three characteristics of Object oriented  
+  1). Encapsulation  
+  
+  2). inherit  
+  
+  3). Polymorphism  
