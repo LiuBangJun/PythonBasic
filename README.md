@@ -809,3 +809,59 @@
   manEat(British())
   ```
   
+  7. Factory pattern  
+  ```
+  class CaeFactory:
+    def create_car(self, brand):
+      if brand == "Benz":
+        return Benz()
+      elif brand == "BMW":
+        return BME()
+      elif brand == "BYD":
+        return BYD()
+      else:
+        return "can not create!"
+
+  class Benz:
+    pass
+
+  class BMW:
+    pass
+
+  class BYD:
+    pass
+
+  factory = CaeFactory()
+  c1 = factory.create_car("Benz")
+  c2 = factory.create_car("BYD")
+  print(c1)
+  print(c2)
+  ```
+  
+  8. Singleton pattern  
+  ```
+  class MySingleton:
+
+    __obj = None
+    __init_flag = True
+
+    def __new__(cls, *arg, **kwargs):
+      if cls.__obj == None:
+        cls.__obj = object.__new__(cls)
+
+      return cls.__obj
+
+    def __init__(self, name):
+      if MySingleton.__init_flag:
+        print("init......")
+        self.name = name
+        MySingleton.__init_flag = False
+
+  a = MySingleton("aa")
+  b = MySingleton("bb")
+  print(a)
+  print(b)
+  ```
+  
+  
+## Exception
