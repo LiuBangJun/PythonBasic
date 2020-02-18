@@ -45,7 +45,7 @@
     1). we only use the "alphabet、number and _ "to name a variable in the python, and only can begin with "alphabet and _ "  
     2). the capital alphabet is different with the lower case alphabet  
     3). we can not use the keywords(like if、and、else...) to name the variable
-    4). begin and end with double underline has a special meaning, we should avoid when name a variable, like the '__init__' means a class
+    4). begin and end with double underline has a special meaning, we should avoid when name a variable, like the ```__init__``` means a class
     5). when we use the variable, we must initialize it
     6). use the 'del variable' to delete a variable  
   4. Line connector  
@@ -742,4 +742,70 @@
   3). Polymorphism  
   
   5. Root class of object  
-    1). rewrite the ```__str__()``` method  
+  1). rewrite the ```__str__()``` method  
+    
+    ```
+    class Person:
+
+      def __init__(self, name):
+        self.name = name
+
+      def __str__(self):
+        return "name is {0}".format(self.name)
+
+    p = Person("rogy")
+    print(p)
+    ```
+    
+  2). mero() (method resolution order)  
+  
+  3). super() (Get parent class definition)  
+  ```
+  class A:
+      def say(self):
+          print("A:", self)
+      
+  class B(A):
+      def say(self):
+          # A.say(self)
+          super().say()
+          print("B:", self)
+          
+  B().say()
+  ```
+  
+  6. Polymorphism (method)
+  ```
+  class Man:
+
+    def eat(self):
+      print("eating!")
+
+
+  class Chinese(Man):
+
+    def eat(self):
+      print("Chinese use chopsticks to eat!")
+
+
+  class British(Man):
+
+    def eat(self):
+      print("British use fork to eat!")
+
+
+  class Indian(Man):
+
+    def eat(self):
+      print("Indian use left hand to eat!")
+
+  def manEat(m):
+    if isinstance(m, Man):
+      m.eat()
+    else:
+      print("wrong!")
+
+  manEat(Chinese())
+  manEat(British())
+  ```
+  
