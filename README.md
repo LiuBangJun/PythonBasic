@@ -685,4 +685,61 @@
   
   2). inherit  
   
+  ```
+  class Person:
+      
+      def __init__(self, name, age):
+          self.name = name
+          self.__age = age
+          
+      def say_age(self):
+          print("age is ...")
+          
+  class Student(Person):
+      
+      def __init__(self, name, age, score):
+          Person.__init__(self, name, age)
+          self.score = score
+      
+  print(Student.mro())
+  s = Student("rogy", 18, 80)
+  s.say_age()
+  print(s.name)
+  #print(s.age)
+  print(s._Person__age)
+  ```
+  
+  rewrite method:  
+  ```
+  class Person:
+      
+      def __init__(self, name, age):
+          self.name = name
+          self.__age = age
+
+      def say_age(self):
+          print("my age is :", self.__age)
+
+      def say_introduce(self):
+          print("my name is {0}".format(self.name))
+
+
+  class Student(Person):
+
+      def __init__(self, name, age, score):
+          Person.__init__(self, name, age)
+          self.score = score
+
+      def say_introduce(self):
+          print("Teacher, my name is {0}".format(self.name))
+
+
+  s = Student("rogy", 18, 80)
+  s.say_age()
+  s.say_introduce()
+  ```
+  
   3). Polymorphism  
+  
+  5. Root class of object  
+    1). rewrite the ```__str__()``` method  
