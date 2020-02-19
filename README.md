@@ -954,3 +954,26 @@
       traceback.print_exc(file=f)
   ```
   
+  7. Custom exception class  
+  ```
+  class AgeError(Exception):
+    def __init__(self, errotInfo):
+      Exception.__init__(self)
+      self.errotInfo = errotInfo
+
+    def __str__(self):
+      return str(self.errotInfo) + " wrong age number!"
+
+
+  if __name__ == "__main__":
+    age = int(input("input a age:"))
+    if age<1 or age>150:
+      raise AgeError(age)
+    else:
+      print("age is {0}".format(age))
+  ```
+  
+
+## File  
+  1. coding  
+    1) ascii:  American Standard Code for Information Interchange  
