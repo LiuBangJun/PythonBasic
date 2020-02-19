@@ -868,6 +868,7 @@
   1. try...except
 
   ```
+  print("steep0")
   try:
     print("steep1")
     a = 3/0
@@ -875,6 +876,81 @@
   except BaseException as e:
     print("steep3")
     print(e)
+    print(type(e))
 
   print("steep4")
   ```
+
+  example:  
+  ```
+  while True:
+    try:
+      number = int(input("please input a number:"))
+      print("The number is: ", number)
+      if number == 88:
+        print("end!!!")
+        break
+    except BaseException as e:
+      print(e)
+      print("Error, the input is not a number!")
+
+  print("cycle is end!")
+  ```
+  
+  2. try...except...except  
+  
+  ```
+  try:
+    a = input("please entry a number: ")
+    b = input("please entry a number: ")
+    c = float(a)/float(b)
+    print(c)
+  except ZeroDivisionError:
+    print("ZeroDivisionError!")
+  except ValueError:
+    print("ValueError!")
+  except NameError:
+    print("NameError!")
+  except BaseException as e:
+    print(e)
+  ```
+  
+  3. try...except...else  
+  
+  4. try...except...finally  
+  ```
+  try:
+    a = input("please entry a number: ")
+    b = input("please entry a number: ")
+    c = float(a)/float(b)
+    print(c)
+
+  except BaseException as e:
+    print(e)
+  else:
+    print(c)
+  finally:
+    print("finally code, i will be run in all the time!")
+  print("end!")
+  ```
+  
+  5. with  
+  ```
+  with open("d:/a.txt", "r") as f:
+    content = f.readline()
+    print(content)
+  print("end!")
+  ```
+  
+  6. traceback  
+  ```
+  import traceback
+  try:
+    print("steep1")
+    num = 1/0
+  except :
+    # traceback.print_exc()
+    with open("d:/aa.txt", "a") as f:
+      traceback.print_exc(file=f)
+  ```
+  
