@@ -865,3 +865,16 @@
   
   
 ## Exception
+  1. try...except
+
+  ```
+  try:
+    print("steep1")
+    a = 3/0
+    print("steep2")
+  except BaseException as e:
+    print("steep3")
+    print(e)
+
+  print("steep4")
+  ```
